@@ -52,7 +52,7 @@ ingress:
   # kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "false"
   hosts:
-    - host: python-docker-example.local
+    - host: python-docker-example.com
       paths:
         - path: /
           pathType: "Prefix"
@@ -64,7 +64,7 @@ ingress:
   tls:
     - secretName: letsencrypt-staging
       hosts:
-        - python-docker-example.local
+        - python-docker-example.com
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
