@@ -62,7 +62,7 @@ ingress:
   #      - chart-example.local
 
   tls:
-    - secretName: letsencrypt-http01
+    - secretName: letsencrypt-staging
       hosts:
         - python-docker-example.com
 
