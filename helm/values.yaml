@@ -52,7 +52,8 @@ ingress:
   # kubernetes.io/ingress.class: nginx
   # kubernetes.io/tls-acme: "false"
   hosts:
-    - host: python-docker-example.com
+#    - host: python-docker-example.com
+    - host: konvoy.tech
       paths:
         - path: /
           pathType: "Prefix"
@@ -64,7 +65,8 @@ ingress:
   tls:
     - secretName: letsencrypt-staging
       hosts:
-        - python-docker-example.com
+#        - python-docker-example.com
+        - konvoy.tech
 
 resources:
   # We usually recommend not to specify default resources and to leave this as a conscious
